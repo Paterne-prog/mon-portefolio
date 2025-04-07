@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic</title>
+    <link rel="stylesheet" href="Graphic.css">
+</head>
+<body>
+    <section id="realizations">
+        <div class="categories">
+          <span><h1>Mes Réalisations</h1></span>
+        </div>
+        <br>
+        <div class="realizations-gallery">
+            <div class="graphic-design" data-scroll>
+                <img src="Logo DAMAROU 2.png" alt="Design Graphique 1">
+                <p>Design créatif réalisé pour un client.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="MEDO.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="RIFFI 2.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="Affiche DAMAROU_version finale.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="grillade_etiquette[1].jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="YANNICK.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="My visit card_015939.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="Etiquette Yannick_125918.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="Personnalisations.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="3X_2.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="Cartable RABAU.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            <div class="graphic-design" data-scroll>
+                <img src="Maquette 1 livre RABAU_083702.jpg" alt="Design Graphique 2">
+                <p>Autre design graphique réalisé.</p>
+            </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <header>
+        <div class="container">
+            <h1>Commande de conception graphique</h1>
+            <p>Créez votre design sur mesure en quelques clics</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="service-categories">
+            <div class="service-card">
+                <h2>Logo Design</h2>
+                <p class="price">À partir de 25.000 FCFA</p>
+                <p>Création d'un logo unique et professionnel</p>
+                <button class="btn" onclick="selectService('Logo')">Choisir</button>
+            </div>
+
+            <div class="service-card">
+                <h2>Carte de visite</h2>
+                <p class="price">À partir de 15.000 FCFA</p>
+                <p>Design de carte de visite moderne</p>
+                <button class="btn" onclick="selectService('Carte de visite')">Choisir</button>
+            </div>
+
+            <div class="service-card">
+                <h2>Affiches</h2>
+                <p class="price">À partir de 8.000 FCFA</p>
+                <p>Création de bannières et publications</p>
+                <button class="btn" onclick="selectService('Réseaux sociaux')">Choisir</button>
+            </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+            <h2>Formulaire de commande</h2>
+            
+            <div class="form-group">
+                <label>Service sélectionné:</label>
+                <input type="text" id="selectedService" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Nom complet *</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Description du projet *</label>
+                <textarea rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Préférences de style</label>
+                <select>
+                    <option>Moderne</option>
+                    <option>Classique</option>
+                    <option>Minimaliste</option>
+                    <option>Artistique</option>
+                </select>
+            </div>
+
+            <div class="file-upload">
+                <p>Déposez vos fichiers de référence ici</p>
+                <input type="file" multiple>
+            </div>
+
+            <button type="submit" class="btn">Envoyer la commande</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Créations Graphiques. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

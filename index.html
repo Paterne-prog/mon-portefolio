@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paterne Gael BAZONGO | Développeur & Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><span>P</span>Paterne</div>
+<button class="hamburger">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</button>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="Graphic.html">Quelques Réalisations</a></li>
+        <li><a href="#">Témoignages</a></li>
+      </ul>
+    </nav>
+    <a class="contact-btn" href="#contact">Me Contacter</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bonjour !<br>Je suis <span>Paterne Gael BAZONGO</span>,<br>Développeur & Designer basé au Burkina Faso.</h1>
+      <p>Développeur, photographe, graphiste et designer web passionné, j’aide les entreprises et particuliers à avoir une présence digitale professionnelle.</p>
+      <div class="btns">
+        <a class="btn-dark" href="Graphic.html">Voir Mon Portfolio</a>
+        <a class="btn-light" href="collaboration.html">Travailler Avec Moi</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="me.jpg" alt="Paterne">
+    </div>
+  </section>
+
+  <div class="categories">
+    <span><h2>Mes compétences</h2></span>
+  </div>
+
+  <section id="services">
+    <div class="service-cards">
+        <div class="card" data-scroll>
+            <img src="1732396047894.png" alt="Conception de sites web">
+            <h3>Conception de Sites Web</h3>
+            <p>Création de sites modernes, performants et adaptés à vos besoins professionnels.</p>
+        </div>
+        <div class="card" data-scroll>
+            <img src="creation_graphique (2024_10_30 19_55_00 UTC).png" alt="Conception de sites web">
+            <h3>Graphisme professionnel</h3>
+            <p>Création de sites modernes, performants et adaptés à vos besoins professionnels.</p>
+        </div>
+        <div class="card" data-scroll>
+            <img src="1732396047862.jpg" alt="Maintenance">
+            <h3>Maintenance Préventive et Curative</h3>
+            <p>Services de maintenance pour le matériel et logiciel pour une performance optimale.</p>
+        </div>
+        <div class="card" data-scroll>
+            <img src="1732396047832.jpg" alt="Photographie">
+            <h3>Photographie</h3>
+            <p>Réalisation de photos de haute qualité pour vos événements et produits.</p>
+        </div>
+    </div>
+</section>
+
+  <section class="about">
+    <img src="me.jpg" alt="Paterne">
+    <div class="about-text">
+      <h2>Qui est Paterne ?</h2>
+      <p>Avec plusieurs années d’expérience dans la tech et le design, je combine mes compétences techniques et artistiques pour concevoir des solutions innovantes.</p>
+      <div class="stats">
+        <div>100+ Projets</div>
+        <div>20+ Clients</div>
+        <div>5+ Ans d'expérience</div>
+      </div>
+      <a class="download-btn" href="#">Télécharger mon CV</a>
+    </div>
+  </section>
+
+  <section class="tools">
+    <h2>Outils que j’utilise au quotidien</h2>
+    <div class="tool-icons">
+      <div class="tool"><img src="figma.png"><div>Figma</div></div>
+      <div class="tool"><img src="photoshop.png"><div>Photoshop</div></div>
+      <div class="tool"><img src="illustrator.png"><div>Illustrator</div></div>
+      <div class="tool"><img src="xd.png"><div>Adobe xd</div></div>
+      <div class="tool"><img src="photoshop-lightroom.png"><div>Lightroom</div></div>
+      <div class="tool"><img src="visual-studio.png"><div>visual-studio Code</div></div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+        <h2>Contact</h2>
+        
+        <div class="contact-info">
+            <p><b> <a href="paterne.dev@example.com">E-mail: paterne.dev@gamil.com</a></p>
+            <p><b>Téléphone: </b>+226 75 76 11 47 / 02 37 71 28</p>
+            <p><a href="https://wa.me/64775615" target="_blank">WhatsApp</a></p>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Votre nom</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Votre adresse email</label>
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Votre message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Envoyer le message
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</section>
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Animation au scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('[data-scroll]').forEach((el) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    observer.observe(el);
+  });
+
+  // Fermeture auto du menu sur mobile
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        hamburger.classList.remove('active');
+        document.querySelector('nav').classList.remove('active');
+        document.querySelector('.contact-btn').classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  });
+});
+    const hamburger = document.querySelector('.hamburger');
+    
+    hamburger.addEventListener('click', () => {
+        // Basculer les classes active
+        hamburger.classList.toggle('active');
+        document.querySelector('nav').classList.toggle('active');
+        document.querySelector('.contact-btn').classList.toggle('active');
+        
+        // Empêcher le défilement derrière le menu
+        document.body.classList.toggle('no-scroll');
+    });
+
+</script>
+</html>

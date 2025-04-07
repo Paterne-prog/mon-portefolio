@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #1357e1;
+  }
+
+  p.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  button {
+    background-color: #1357e1;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0e45b5;
+  }
+
+  .alt-contact {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .alt-contact a {
+    color: #1357e1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .alt-contact a:hover {
+    text-decoration: underline;
+  }
